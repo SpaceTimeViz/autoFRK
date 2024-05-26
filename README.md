@@ -1,8 +1,8 @@
 ## autoFRK Package
   [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/autoFRK)](https://CRAN.R-project.org/package=autoFRK)
   [![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/autoFRK)](https://CRAN.R-project.org/package=autoFRK)
-  [![R build status](https://github.com/egpivo/autoFRK/workflows/R-CMD-check/badge.svg)](https://github.com/egpivo/autoFRK/actions)
-  [![Coverage Status](https://img.shields.io/codecov/c/github/egpivo/autoFRK/master.svg)](https://codecov.io/github/egpivo/autoFRK?branch=master)
+  [![R build status](https://github.com/SpaceTimeViz/autoFRK/workflows/R-CMD-check/badge.svg)](https://github.com/SpaceTimeViz/autoFRK/actions)
+  [![Coverage Status](https://codecov.io/gh/SpaceTimeViz/autoFRK/graph/badge.svg?token=Ew6qiAxBaO)](https://codecov.io/github/SpaceTimeViz/autoFRK?branch=master)
   
 
 ### Introduction
@@ -13,11 +13,11 @@
 To get the current development version from GitHub:
 
 ```r
-devtools::install_github("egpivo/autoFRK")
+devtools::install_github("SpaceTimeViz/autoFRK")
 ```
 
 ### Usage
-- Main function `autoFRL`: see [demo](https://egpivo.github.io/autoFRK/reference/autoFRK.html#examples)
+- Main function `autoFRL`: see [demo](https://SpaceTimeViz.github.io/autoFRK/reference/autoFRK.html#examples)
 
 
 ### Authors
