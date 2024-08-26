@@ -1,6 +1,6 @@
 ## autoFRK Package
-  [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/autoFRK)](https://CRAN.R-project.org/package=autoFRK)
-  [![Downloads](http://cranlogs.r-pkg.org/badges/grand-total/autoFRK)](https://CRAN.R-project.org/package=autoFRK)
+  [![Downloads (total)](https://cranlogs.r-pkg.org/badges/grand-total/autoFRK?color=brightgreen)](https://www.r-pkg.org/pkg/autoFRK)
+  [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/autoFRK?color=green)](https://cran.r-project.org/package=autoFRK)
   [![R build status](https://github.com/SpaceTimeViz/autoFRK/workflows/R-CMD-check/badge.svg)](https://github.com/SpaceTimeViz/autoFRK/actions)
   [![Coverage Status](https://codecov.io/gh/SpaceTimeViz/autoFRK/graph/badge.svg?token=Ew6qiAxBaO)](https://codecov.io/github/SpaceTimeViz/autoFRK?branch=master)
   
