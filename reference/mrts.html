@@ -7,7 +7,7 @@ They are useful in the spatio-temporal random effects model."><!-- mathjax --><s
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]--></head><body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-reference-topic">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -35,20 +35,20 @@ They are useful in the spatio-temporal random effects model."><!-- mathjax --><s
       </ul><ul class="nav navbar-nav navbar-right"><li>
   <a href="https://github.com/egpivo/autoFRK/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
-     
+
   </a>
 </li>
       </ul></div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Multi-Resolution Thin-plate Spline Basis Functions</h1>
-    <small class="dont-index">Source: <a href="https://github.com/egpivo/autoFRK/blob/HEAD/R/basisFunction.R" class="external-link"><code>R/basisFunction.R</code></a></small>
+    <small class="dont-index">Source: <a href="https://github.com/egpivo/autoFRK/blob/master/R/basisFunction.R" class="external-link"><code>R/basisFunction.R</code></a></small>
     <div class="hidden name"><code>mrts.Rd</code></div>
     </div>
 
@@ -66,35 +66,35 @@ They are useful in the spatio-temporal random effects model.</p>
 
     <div id="arguments">
     <h2>Arguments</h2>
-    <dl><dt>knot</dt>
+
+
+<dl><dt id="arg-knot">knot<a class="anchor" aria-label="anchor" href="#arg-knot"></a></dt>
 <dd><p><em>m</em> by <em>d</em> matrix (<em>d&lt;=3</em>) for <em>m</em> locations of <em>d</em>-dimensional knots as in ordinary splines.
 Missing values are not allowed.</p></dd>
 
 
-<dt>k</dt>
+<dt id="arg-k">k<a class="anchor" aria-label="anchor" href="#arg-k"></a></dt>
 <dd><p>the number (<em>&lt;=m</em>) of basis functions.</p></dd>
 
 
-<dt>x</dt>
+<dt id="arg-x">x<a class="anchor" aria-label="anchor" href="#arg-x"></a></dt>
 <dd><p><em>n</em> by <em>d</em> matrix of coordinates corresponding to <em>n</em> locations where the values of basis functions to be evaluated.
 Default is <code>NULL</code>, which uses the <em>m</em> by <em>d</em> matrix in <code>knot</code>.</p></dd>
 
 
-<dt>maxknot</dt>
+<dt id="arg-maxknot">maxknot<a class="anchor" aria-label="anchor" href="#arg-maxknot"></a></dt>
 <dd><p>maximum number of knots to be used in generating basis functions. If  <code>maxknot</code> &lt; <em>m</em>, a deterministic subset selection of knots will be used.  For using all knots, set <code>maxknot</code>&gt;=<em>m</em>.</p></dd>
 
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    
-
-<p>An <code>mrts</code> object is generated. If <code>x=NULL</code> (default) it returns
+    <p>An <code>mrts</code> object is generated. If <code>x=NULL</code> (default) it returns
 an <em>m</em> by <em>k</em> matrix of <em>k</em> basis function taken values at knots.
 With <code>x</code> given, it returns <em>n</em> by <em>k</em> matrix for basis functions taken values at <code>x</code>.</p>
     </div>
     <div id="references">
     <h2>References</h2>
-    
+
 <ul><li><p>Tzeng, S., &amp; Huang, H. C. (2018). Resolution Adaptive Fixed Rank Kriging. Technometrics, https://doi.org/10.1080/00401706.2017.1345701.</p></li>
 <li><p>Tzeng, S., &amp; Huang, H. C. (2015). Multi-Resolution Spatial Random-Effects Models for Irregularly Spaced Data. arXiv preprint arXiv:1504.05659.</p></li>
 <li><p>Nychka D, Hammerling D, Sain S, Lenssen N (2016). “LatticeKrig: Multiresolution Kriging Based on Markov Random Fields.” doi:10.5065/D6HD7T1R <a href="https://doi.org/10.5065/D6HD7T1R" class="external-link">https://doi.org/10.5065/D6HD7T1R</a>, R package version 8.4, <a href="https://github.com/NCAR/LatticeKrig" class="external-link">https://github.com/NCAR/LatticeKrig</a>.</p></li>
@@ -136,15 +136,15 @@ With <code>x</code> given, it returns <em>n</em> by <em>k</em> matrix for basis 
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.9.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
 </div>
 
       </footer></div>
 
-  
 
 
-  
+
+
 
   </body></html>
 

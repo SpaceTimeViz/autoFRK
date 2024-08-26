@@ -3,7 +3,7 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]--></head><body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-reference-topic">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -31,20 +31,20 @@
       </ul><ul class="nav navbar-nav navbar-right"><li>
   <a href="https://github.com/egpivo/autoFRK/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
-     
+
   </a>
 </li>
       </ul></div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Predict method for Fixed Rank Kriging</h1>
-    <small class="dont-index">Source: <a href="https://github.com/egpivo/autoFRK/blob/HEAD/R/predictor.R" class="external-link"><code>R/predictor.R</code></a></small>
+    <small class="dont-index">Source: <a href="https://github.com/egpivo/autoFRK/blob/master/R/predictor.R" class="external-link"><code>R/predictor.R</code></a></small>
     <div class="hidden name"><code>predict.FRK.Rd</code></div>
     </div>
 
@@ -53,7 +53,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="co"># S3 method for FRK</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="co"># S3 method for class 'FRK'</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span></span>
 <span>  <span class="va">object</span>,</span>
 <span>  obsData <span class="op">=</span> <span class="cn">NULL</span>,</span>
@@ -69,16 +69,18 @@
 
     <div id="arguments">
     <h2>Arguments</h2>
-    <dl><dt>object</dt>
+
+
+<dl><dt id="arg-object">object<a class="anchor" aria-label="anchor" href="#arg-object"></a></dt>
 <dd><p>a model object obtained from "<code>autoFRK</code>".</p></dd>
 
 
-<dt>obsData</dt>
+<dt id="arg-obsdata">obsData<a class="anchor" aria-label="anchor" href="#arg-obsdata"></a></dt>
 <dd><p>a vector with observed data used for prediction.
 Default is <code>NULL</code>, which uses the <code>Data</code> input from <code>object</code>.</p></dd>
 
 
-<dt>obsloc</dt>
+<dt id="arg-obsloc">obsloc<a class="anchor" aria-label="anchor" href="#arg-obsloc"></a></dt>
 <dd><p>a matrix with rows being coordinates of observation locations for <code>obsData</code>.
 Only <code>object</code> using <code>mrts</code> basis functions can have
 <code>obsloc</code> different from the <code>loc</code> input of <code>object</code>;
@@ -86,37 +88,35 @@ not applicable for user-specified basis functions.
 Default is <code>NULL</code>, which uses the <code>loc</code> input of <code>object</code>.</p></dd>
 
 
-<dt>mu.obs</dt>
+<dt id="arg-mu-obs">mu.obs<a class="anchor" aria-label="anchor" href="#arg-mu-obs"></a></dt>
 <dd><p>a vector or scalar for the deterministic mean values at <code>obsloc</code>. Default is 0.</p></dd>
 
 
-<dt>newloc</dt>
+<dt id="arg-newloc">newloc<a class="anchor" aria-label="anchor" href="#arg-newloc"></a></dt>
 <dd><p>a matrix with rows being coordinates of new locations for prediction.
 Default is <code>NULL</code>, which gives prediction at the locations of the observed data.</p></dd>
 
 
-<dt>basis</dt>
+<dt id="arg-basis">basis<a class="anchor" aria-label="anchor" href="#arg-basis"></a></dt>
 <dd><p>a matrix with each column being a basis function taken values at <code>newloc</code>.
 It can be omitted if <code>object</code> was fitted using  default <code>mrts</code> basis functions.</p></dd>
 
 
-<dt>mu.new</dt>
+<dt id="arg-mu-new">mu.new<a class="anchor" aria-label="anchor" href="#arg-mu-new"></a></dt>
 <dd><p>a vector or scalar for the deterministic mean values at <code>newloc</code>. Default is 0.</p></dd>
 
 
-<dt>se.report</dt>
+<dt id="arg-se-report">se.report<a class="anchor" aria-label="anchor" href="#arg-se-report"></a></dt>
 <dd><p>logical; if <code>TRUE</code> then the standard error of prediction is reported.</p></dd>
 
 
-<dt>...</dt>
+<dt id="arg--">...<a class="anchor" aria-label="anchor" href="#arg--"></a></dt>
 <dd><p>not used but needed for the S3 generic/method compatibility.</p></dd>
 
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    
-
-<p>A list with the components described below.</p>
+    <p>A list with the components described below.</p>
 <dl><dt>pred.value</dt>
 <dd><p>a matrix with the <em>(i,t)</em> element being the predicted value at <em>i</em>-th location and time <em>t</em>.</p></dd>
 
@@ -145,15 +145,15 @@ It can be omitted if <code>object</code> was fitted using  default <code>mrts</c
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.9.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
 </div>
 
       </footer></div>
 
-  
 
 
-  
+
+
 
   </body></html>
 
